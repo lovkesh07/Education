@@ -21,15 +21,19 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 1rem;
+  width: 2rem;
+  /* border-radius: 0px 0px 10px 10px; */
 }
 
 html::-webkit-scrollbar-track {
-  background: #fff;
+  /* background: rgb(243, 94, 94); */
+  background: linear-gradient(rgb(219, 25, 25),#fff);
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #10221b;
+  background: #f5e400;
+  border: .5rem solid rgb(247, 187, 76);
+  border-radius: 10px 10px 10px 10px;
 }
 
 section {
@@ -287,6 +291,7 @@ section {
 .category .box-container .box {
   text-align: center;
   padding: 1rem;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(235, 156, 10, 0.3) 10px 10px, rgba(240, 46, 104, 0.2) 15px 15px, rgba(240, 162, 46, 0.1) 20px 20px, rgba(240, 211, 46, 0.05) 25px 25px;
 }
 
 .category .box-container .box img {
@@ -567,12 +572,11 @@ section {
 }
 
 .btn_packages:hover {
-  /* background: linear-gradient(36deg, #22c1c3,#fdbb2d); */
   background: linear-gradient(36deg, #c39d22,#fdef2d);
-  /* color: rgb(255, 254, 254); */
   border: none;
-  box-shadow: rgba(255, 252, 252, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(59, 56, 56, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(53, 50, 50, 0.09) 0px 4px 2px, rgba(94, 89, 89, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  /* box-shadow: rgba(255, 252, 252, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(59, 56, 56, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(53, 50, 50, 0.09) 0px 4px 2px, rgba(94, 89, 89, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
   border-radius: 5.5rem;
+  background: linear-gradient(36deg,#f7f448,rgb(243, 51, 51));
 }
 
 
@@ -596,18 +600,24 @@ section {
 .services .box-container .box {
   text-align: center;
   padding: 2rem;
-  border: 0.2rem solid #10221b;
+  /* border: 0.2rem solid #060a08; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: .5rem;
   background: #fff;
+  transition: 2s;
 }
 
 .services .box-container .box:hover {
-  background: #10221b;
+  background: linear-gradient(36deg,#f7f448,rgb(243, 51, 51));
+  border-radius: 0px 150px 0px 0px;
+  transition: 2s;
 }
 
 .services .box-container .box:hover img {
   -webkit-filter: invert(1);
           filter: invert(1);
+          border-radius: 150px 0px 0px 0px;
+          /* transition: 1s; */
 }
 
 .services .box-container .box:hover p {
@@ -625,8 +635,9 @@ section {
 }
 
 .services .box-container .box img {
-  height: 10rem;
+  height: 20rem;
   margin-bottom: 1rem;
+  
 }
 
 .services .box-container .box h3 {
@@ -640,14 +651,37 @@ section {
   padding: 1rem 0;
   line-height: 2;
 }
+.btn_services {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #10221b;
+  color: #10221b;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+  transition: 0.1s;
+}
+
+.btn_services:hover {
+  background: linear-gradient(36deg, #f39f04,#fdef2d);
+  border: none;
+  /* box-shadow: rgba(255, 252, 252, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(59, 56, 56, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(53, 50, 50, 0.09) 0px 4px 2px, rgba(94, 89, 89, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5.5rem;
+}
 
 /* -------------------------------services section end-------------------------  */
+
+/* -----------------------------reviews-start-------------------------------------- */
 
 .reviews .slide .text {
   padding: 2rem;
   font-size: 1.5rem;
   font-style: italic;
-  background: #eee;
+  /* background: #eee; */
+  background: linear-gradient(36deg,#f7f448e7,rgba(245, 32, 32, 0.747));
   border-radius: .5rem;
   color: #10221b;
   line-height: 2;
@@ -663,7 +697,7 @@ section {
   left: .7rem;
   height: 3rem;
   width: 3rem;
-  background: #eee;
+  background: #f7f448e7;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -686,13 +720,15 @@ section {
 
 .reviews .slide .user h3 {
   font-size: 2rem;
-  color: #10221b;
+  color: #141b18;
 }
 
 .reviews .slide .user span {
   color: #219150;
   font-size: 1.5rem;
 }
+
+/* -----------------------------reviews-end-------------------------------------- */
 
 .blogs .slide {
   text-align: center;
@@ -799,9 +835,11 @@ section {
   height: 12rem;
 }
 
+
+/* -------------------------footer start------------------------- */
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/home-bg-5.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/home-bg-5.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -813,8 +851,18 @@ section {
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
-}
 
+  
+}
+.footer .box{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 26px -8px;
+  padding:20px;
+  /* background:#fff; */
+  transition:.2s;
+}
+.footer .box:hover{
+  transform: scale(1.1);
+}
 .footer .box-container .box h3 {
   font-size: 2rem;
   padding: 1.5rem 0;
@@ -823,18 +871,18 @@ section {
 
 .footer .box-container .box a {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #fff;
   padding: 1rem 0;
 }
 
 .footer .box-container .box a i {
-  color: #219150;
+  color: #f09d21;
   padding-right: .5rem;
 }
 
 .footer .box-container .box a:hover {
-  color: #219150;
+  color: #f7e32f;
 }
 
 .footer .box-container .box a:hover i {
@@ -848,11 +896,17 @@ section {
   padding-top: 2.5rem;
   font-size: 2rem;
   color: #fff;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 26px -8px; */
 }
 
 .footer .credit span {
-  color: #219150;
+  color: #e6a51a;
+  font-size: 4rem;
+
 }
+
+/* -------------------------footer end------------------------- */
+
 
 @media (max-width: 1200px) {
   .header {
