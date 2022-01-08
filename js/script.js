@@ -131,3 +131,12 @@ var swiper = new Swiper(".clients-slider", {
         },
     },
 });
+
+
+var overlay = document.getElementById("loader-wrapper");
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    overlay.style.display = "none";
+  }, 3000);
+});
